@@ -2,10 +2,19 @@ import React from 'react';
 import '../style/Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { Link } from 'react-router-dom';
+import { useStateValue } from '../StateProvider'
+
+
 const Header = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [{basket}, dispatch] = useStateValue();
+
     return (
         <div className='header'>
-            <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" className='logo' alt="" />
+            <Link to='/'>
+                <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" className='logo' alt="" />
+            </Link>
             <div className="search">
                 <input className="searchInput" type="text" />
                 <SearchIcon className="searchIcon" />
@@ -23,10 +32,12 @@ const Header = () => {
                     <span className="firstLine">Your</span>
                     <span className="SecondLine">Prime</span>
                 </div>
-                <div className="basket">
-                    <ShoppingBasketIcon />
-                    <span className="SecondLine basketCount">0</span>
-                </div>
+                <Link to='/cart'>
+                    <div className="basket">
+                        <ShoppingBasketIcon />
+                        <span className="SecondLine basketCount">{basket.length}</span>
+                    </div>
+                </Link>
             </div>
         </div>
     )

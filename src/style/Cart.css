@@ -1,0 +1,48 @@
+.cart {
+  display: flex;
+  padding: 20px;
+  height: max-content;
+}
+.cartTitle {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.cartAd {
+  width: 100%;
+}
+.cartRight{
+  margin-left: 10px;
+}
+.subTotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+.subTotalGift {
+  display: flex;
+  align-items: center;
+}
+
+.subTotalGift > input {
+  margin-right: 5px;
+}
+
+.subTotal > button {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}

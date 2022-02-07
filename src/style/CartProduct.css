@@ -1,0 +1,35 @@
+.cartProduct {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cartProductInfo {
+  padding-left: 20px;
+}
+
+.cartProductInfo > button {
+  background: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
+.cartProductImage {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+
+.cartProductRating {
+  display: flex;
+}
+
+.cartProductTitle {
+  font-size: 17px;
+  font-weight: 800;
+}
+.icon {
+  color: #ffa41c;
+}
