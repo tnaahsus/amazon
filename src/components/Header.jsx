@@ -4,15 +4,20 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider'
+import{auth} from  '../firebase' 
 
 
 const Header = () => {
-  // eslint-disable-next-line no-unused-vars
-  const [{basket}, dispatch] = useStateValue();
-
+    // eslint-disable-next-line no-unused-vars
+    const [{ basket, user, drawer }, dispatch] = useStateValue();
+    const handleAuthentication = () => {
+        if (user) {
+          auth.signOut();
+        }
+      };
     return (
         <div className='header'>
-            <Link to='/'>
+            <Link to='/' >
                 <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" className='logo' alt="" />
             </Link>
             <div className="search">
@@ -20,10 +25,12 @@ const Header = () => {
                 <SearchIcon className="searchIcon" />
             </div>
             <div className="nav">
-                <div className="option">
-                    <span className="firstLine">Hello</span>
-                    <span className="SecondLine">Sign in</span>
-                </div>
+                <Link to='/login'>
+                    <div className="option"  onClick={handleAuthentication}>
+                        <span className="firstLine">{user ? user.email : "Hello Guest"}</span>
+                        <span className="SecondLine">{user ? "Sign Out" : "Sign In"}</span>
+                    </div>
+                </Link>
                 <div className="option">
                     <span className="firstLine">Returns</span>
                     <span className="SecondLine">& Orders</span>

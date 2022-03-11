@@ -3,7 +3,6 @@ import '../style/Home.css'
 import Product from './Product';
 import Slider from './Slider';
 
-
 const Home = () => {
     const imgBanner = ["https://m.media-amazon.com/images/I/61dAnKVsBXL._SX3000_.jpg", "https://m.media-amazon.com/images/I/61DW3uLK+ML._SX3000_.jpg", "https://m.media-amazon.com/images/I/51Mi-BalXCL._SX1500_.jpg", "https://m.media-amazon.com/images/I/51E+1Wj8z9L._SX1500_.jpg", "https://m.media-amazon.com/images/I/711Y9Al9RNL._SX3000_.jpg"
     ]
@@ -61,8 +60,8 @@ const Home = () => {
                         image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
                     />
                 </div>
-
             </div>
+
         </div>
     );
 };
