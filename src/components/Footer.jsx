@@ -8,7 +8,7 @@ const Footer = () => {
                 <div class="amazon-footer-lists">
                     <div class="amazon-row">
                         <div class="amazon-col  amazon-col--30">
-                            <a href="/" class="amazon-footer-logo"><img src="https://s26.postimg.org/4hy4ykkjd/amazon_author_logo.png" alt="Amazon Logo" class="amazon-footer-logo-image" /></a>
+                            <a href="/" class="amazon-footer-logo"><img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" class="amazon-footer-logo-image" /></a>
                         </div>
                         <div class="amazon-col  amazon-col--20">
                             <h4 class="amazon-footer-title">Our Products</h4>

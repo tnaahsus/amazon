@@ -8,42 +8,51 @@
   z-index: 100;
 }
 
-.logo {
-  width: 100px;
+.navlogo {
+  margin-top: 40px;
+  margin-bottom: 20px;
   object-fit: contain;
-  margin: 0 20px;
-  margin-top: 18px;
+  width: 100px;
+  margin-right: 5px;
+  margin-left: 12px;
 }
 
 
-.nav{
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 5px;
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 5px;
 }
-.option{
-    display: flex;
-    flex-direction: column;
-    margin:0 10px;
-    color: white;
+
+.option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  color: white;
 }
-.basket{
-    display: flex;
-    align-items: center;
-    color: white;
-    margin-left: 5px;
+
+.basket {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 5px;
+  margin-top: 7px;
 }
-.firstLine{
-    font-size: 10px;
+
+.firstLine {
+  font-size: 10px;
 }
-.secondLine{
-    font-size: 13px;
-    font-weight: 900;
+
+.secondLine {
+  font-size: 13px;
+  font-weight: 900;
 }
-.basketCount{
-    margin: 0 6px;
-    text-decoration: none;
+
+.basketCount {
+  margin: 0 6px;
+  text-decoration: none;
 }
+
 .search {
   display: flex;
   flex: 1;
@@ -66,5 +75,7 @@
   height: 20px;
   padding: 10px;
   border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   width: 100%;
 }
